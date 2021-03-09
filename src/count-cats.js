@@ -1,4 +1,8 @@
-module.exports = function countCats(/* matrix */) {
-  throw 'Not implemented';
-  // remove line with error and write your code here
+module.exports = function countCats(arr) {
+  let counter = 0;
+  arr.flat(Infinity).forEach(function(item) {
+    if(item=='^^'){counter++}
+  });
+  
+  return counter;
 };
